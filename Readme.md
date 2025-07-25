@@ -39,13 +39,6 @@ if st.button("Get Standards"):
         st.write(f"**{r['ID']}** - {r['standard']} (Score: {r['score']})")
 ```
 
-## 📦 Required Libraries
-
-Install required libraries using:
-
-```bash
-pip install -r requirements.txt
-```
 
 ## 📝 Notes
 
