@@ -4,7 +4,7 @@ from rank_bm25 import BM25Okapi
 import pandas as pd
 
 # Load the dataset
-df = pd.read_csv('/Users/shivendragupta/Desktop/internship25/CCSS/data/CCSS Common Core Standards(English Standards).csv')
+df = pd.read_csv('data/CCSS Common Core Standards(English Standards).csv')
 df.dropna(inplace=True)
 df['State Standard'] = df['State Standard'].apply(lambda x: preprocessing_pipeline(x).preprocess())
 

@@ -7,7 +7,7 @@ model_name = "naver/splade-cocondenser-ensembledistil"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForMaskedLM.from_pretrained(model_name)
 model.eval()
-df = pd.read_csv('/Users/shivendragupta/Desktop/internship25/CCSS/data/CCSS Common Core Standards(English Standards).csv')
+df = pd.read_csv('data/CCSS Common Core Standards(English Standards).csv')
 df.dropna(inplace=True)
 
 # Reset index to align doc IDs
